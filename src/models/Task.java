@@ -24,7 +24,7 @@ public class Task {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
@@ -44,7 +44,15 @@ public class Task {
     public void setId(Integer id) {
         this.id = id;
     }
+    
+    public String getTitle() {
+        return title;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
 
     
     public String getContent() {
